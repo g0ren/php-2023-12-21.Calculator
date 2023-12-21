@@ -1,0 +1,118 @@
+body{
+    background-image: url("bg.jpg");
+    margin-left: 20%;
+}
+
+h1{
+    margin-left: 0px;
+    text-align: center;
+}
+
+.calc_body{
+    width: 50%;
+    aspect-ratio: 1.5/1;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+            "display . . ."
+            "b7 b8 b9 bdiv"
+            "b4 b5 b6 bmul"
+            "b1 b2 b3 bsub"
+            "b0 bdot badd bres";
+    border: 2px solid black;
+}
+
+.display{
+    background-color: green;
+    color: black;
+    font-family: monospace;
+    grid-area: display;
+    height: fit-content;
+    height: 100%;
+    width: 400%;
+    font-size: xxx-large;
+}
+
+button{
+    font-size: xx-large;
+}
+
+#b1{
+    grid-area: b1;
+}
+
+#b2{
+    grid-area: b2;
+}
+
+#b3{
+    grid-area: b3;
+}
+
+#b4{
+    grid-area: b4;
+}
+
+#b5{
+    grid-area: b5;
+}
+
+#b6{
+    grid-area: b6;
+}
+
+#b7{
+    grid-area: b7;
+}
+
+#b8{
+    grid-area: b8;
+}
+
+#b9{
+    grid-area: b9;
+}
+
+#b0{
+    grid-area: b0;
+}
+
+#badd{
+    grid-area: badd;
+}
+
+#bsub{
+    grid-area: bsub;
+}
+
+#bmul{
+    grid-area: bmul;
+}
+
+#bdiv{
+    grid-area: bdiv;
+}
+
+#bdot{
+    grid-area: bdot;
+}
+
+#bres{
+    grid-area: bres;
+    background-color: orange;
+}
+
+.hourglass{
+    position: absolute;
+    display: none;
+    top: 34%;
+    left: 37%;
+    height: 15vh;
+    aspect-ratio: 1/1;
+}
+
+footer{
+    position: fixed;
+    margin: 0;
+}
